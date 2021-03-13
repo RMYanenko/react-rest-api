@@ -1,11 +1,12 @@
 import {Component} from 'react';
-
+import './charDetails.css';
+import {CharDetailsWrapper, CharDetailsTitle} from './styles'
 export default class CharDetails extends Component {
 
     render() {
         return (
-            <div className="char-details rounded">
-                <h4>John Snow</h4>
+            <CharDetailsWrapper className="rounded">
+                <CharDetailsTitle>John Snow</CharDetailsTitle>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item d-flex justify-content-between">
                         <span className="term">Gender</span>
@@ -24,7 +25,7 @@ export default class CharDetails extends Component {
                         <span>First</span>
                     </li>
                 </ul>
-            </div>
+            </CharDetailsWrapper>
         );
     }
 }
